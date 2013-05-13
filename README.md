@@ -1,0 +1,4 @@
+angular
+=======
+
+angular for component
