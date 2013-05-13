@@ -1,0 +1,9 @@
+{
+  "name": "angular",
+  "version": "0.0.0",
+  "description": "angular js",
+  "scripts": [
+    "index.js"
+  ],
+  "repo": "https://raw.github.com/redbadger/angular"
+}
