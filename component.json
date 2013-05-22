@@ -2,6 +2,9 @@
   "name": "angular",
   "version": "1.0.2",
   "description": "angular js",
+  "dependencies": {
+    "component/json-fallback": "*"
+  },
   "scripts": [
     "index.js"
   ],

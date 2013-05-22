@@ -3,8 +3,10 @@
  * (c) 2010-2012 Google, Inc. http://angularjs.org
  * License: MIT
  */
-(function(window, document, undefined) {
+
 'use strict';
+
+var JSON = require('json-fallback');
 
 ////////////////////////////////////
 
@@ -682,8 +684,8 @@ function bind(self, fn) {
             : fn.call(self);
         };
   } else {
-    // in IE, native methods are not functions so they cannot be bound (note: they don't need to be)
     return fn;
+    // in IE, native methods are not functions so they cannot be bound (note: they don't need to be)
   }
 }
 
@@ -14397,6 +14399,6 @@ var styleDirective = valueFn({
     angularInit(document, bootstrap);
   });
 
-})(window, document);
 angular.element(document).find('head').append('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\\:form{display:block;}</style>');
+
 module.exports = angular;
